@@ -16,7 +16,7 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("n", "J", "mzJ`z")
 
--- Moving
+-- Moves and centers the screen
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 
