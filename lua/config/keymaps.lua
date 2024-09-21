@@ -5,10 +5,6 @@
 
 local map = vim.keymap.set
 
--- Open terminal on a vertical split windows (vscode like)
--- nmap <C-S-P> :split | terminal <CR>
-map("n", "<Leader>t", "<Cmd>split | terminal <CR>", { desc = "Open terminal on split window" })
-
 -- map arrow keys to pane shift
 map("n", "<Up>", "<C-w><C-k>", { noremap = true })
 map("n", "<Down>", "<C-w><C-j>", { noremap = true })
