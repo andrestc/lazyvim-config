@@ -20,8 +20,13 @@ map("n", "J", "mzJ`z")
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 
--- Inline paste on visual mode
+-- Delete the selected text and paste over it.
+-- Deleted text is sent to the blackhole register ("_)
 map("x", "<leader>p", [["_dP]])
 
+-- Blackhole it.
+map({ "n", "v" }, "<leader>d", [["_d]])
+
+-- Yank to system clipboard
 map({ "n", "v" }, "<leader>y", [["+y]])
 map("n", "<leader>Y", [["+Y]])
